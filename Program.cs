@@ -8,6 +8,7 @@ namespace CentigradosFahrenheit
     {
         static void Main(string[] args)
         {
+            //V 2.0
             /* 0 grados Celsius es igual a 32 grados Fahrenheit:
 
             0 ° C = 32 ° F
@@ -17,6 +18,14 @@ namespace CentigradosFahrenheit
 
              T (° F) = T (° C) × 9/5 + 32 */
 
+            Console.WriteLine("Convertir Grados centigrados a grados fahrenheit");
+            Centigradosafarh();
+            
+            Console.ReadKey();
+
+         }
+        static void Centigradosafarh()
+        {
             int gradosC = 0;
             int gradosF = 0;
 
@@ -27,11 +36,7 @@ namespace CentigradosFahrenheit
 
             Console.WriteLine("{0} grados centigrados son iguales a {1} grados fahrenheit", gradosC, gradosF);
 
-            Console.ReadKey();
-
-
-
-
         }
+
     }
 }
