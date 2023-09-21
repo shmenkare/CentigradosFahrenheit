@@ -36,9 +36,7 @@ namespace CentigradosFahrenheit
             r = gradosC * (9 / 5) + 32;
             return r;
 
-            
-
-        }
+         }
 
     }
 }
