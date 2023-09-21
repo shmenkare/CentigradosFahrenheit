@@ -17,24 +17,26 @@ namespace CentigradosFahrenheit
              * (° C) multiplicada por 9/5 más 32:
 
              T (° F) = T (° C) × 9/5 + 32 */
-
+            int resul = 0;
             Console.WriteLine("Convertir Grados centigrados a grados fahrenheit");
-            Centigradosafarh();
-            
+            resul = Centigradosafarh();
+
+            Console.WriteLine("El resultado son {0} radianes", resul);
             Console.ReadKey();
 
          }
-        static void Centigradosafarh()
+        static int Centigradosafarh()
         {
             int gradosC = 0;
-            int gradosF = 0;
+            int r = 0;
 
             Console.WriteLine("Ingresa los grados Centigrados a convertir");
             gradosC = Convert.ToInt32(Console.ReadLine());
 
-            gradosF = gradosC * (9 / 5) + 32;
+            r = gradosC * (9 / 5) + 32;
+            return r;
 
-            Console.WriteLine("{0} grados centigrados son iguales a {1} grados fahrenheit", gradosC, gradosF);
+            
 
         }
 
